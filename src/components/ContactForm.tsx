@@ -39,7 +39,7 @@ export default function App() {
         className="bg-blue-900 opacity-50"
         {...register("message", { maxLength: 200 })}
         rows={4}
-        cols={50}
+        cols={30}
       />
 
       <button type="submit">Submit</button>

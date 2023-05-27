@@ -21,10 +21,10 @@ function Home() {
         height: '100vh'
       }}
       className='flex flex-col justify-center items-center'>
-        <h1 className=' text-center text-5xl text-blue-200 font-bold ml-20'>
-          The Sonorous Voice LLC
+        <h1 className=' text-center text-5xl text-blue-200 font-bold ml-10 p-5'>
+          The Sonorous Voice
         </h1>
-        <p className=' text-center text-3xl text-blue-200 font-bold ml-20'>Voice Artist</p>
+        <p className=' text-center text-2xl text-blue-200 font-bold ml-10'>Voice Artist</p>
       </div>
     </div>
   );

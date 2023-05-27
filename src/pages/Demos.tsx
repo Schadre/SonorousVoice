@@ -10,31 +10,40 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StopIcon from '@mui/icons-material/Stop';
 import Background from '../assets/images/Demos.jpeg';
 import Navbar from '../components/Navbar';
+import Kang from '../assets/VoiceOvers/Kang.mp3'
+import Gene from '../assets/VoiceOvers/Gene.mp3'
+import Nutella from '../assets/VoiceOvers/Nutella.mp3'
 
 const cardData = [
   {
-    title: 'Voice Sample 1',
-    artist: 'Artist 1',
+    title: 'Kang',
+    category: 'Animation',
+    audioUrl: Kang,
   },
   {
-    title: 'Voice Sample 2',
-    artist: 'Artist 2',
+    title: 'Gene',
+    category: 'Commerical',
+    audioUrl: Gene,
   },
   {
-    title: 'Voice Sample 3',
-    artist: 'Artist 3',
+    title: 'Nutella',
+    category: 'Commerical',
+    audioUrl: Nutella,
   },
   {
-    title: 'Voice Sample 4',
-    artist: 'Artist 4',
+    title: 'NBA',
+    category: 'Announcing',
+    audioUrl: Kang,
   },
   {
-    title: 'Voice Sample 5',
-    artist: 'Artist 5',
+    title: 'The Land',
+    category: 'Narration',
+    audioUrl: Gene,
   },
   {
-    title: 'Voice Sample 6',
-    artist: 'Artist 6',
+    title: 'Tribe',
+    category: 'Audio Books',
+    audioUrl: Gene,
   },
 ];
 
@@ -63,6 +72,7 @@ export default function Demos() {
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh',
+       
       }}
     >
       <Navbar />
@@ -71,12 +81,13 @@ export default function Demos() {
         style={{
           flex: 1,
           paddingLeft: '60px',
+          paddingRight: '20px',
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backdropFilter: 'blur(5px)',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          paddingBottom: '100px'
+          paddingBottom: '80px',
         }}
       >
         <div
@@ -86,20 +97,13 @@ export default function Demos() {
             padding: '0 20px',
           }}
         >
-          <h1
-            style={{
-              textAlign: 'center',
-              fontSize: '2.5rem',
-              color: theme.palette.primary.light,
-              marginBottom: '20px',
-            }}
-          >
+          <h1 className='text-center text-5xl text-blue-200 font-bold p-10'>
             Demos
           </h1>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
               gap: '20px',
             }}
           >
@@ -107,11 +111,8 @@ export default function Demos() {
               <Card
                 key={index}
                 sx={{
-                  backgroundColor:
-                    currentCardIndex === index
-                      ? theme.palette.primary.main
-                      : theme.palette.primary.main + '80', // Use a transparent background color with 80% opacity
-                  color: theme.palette.primary.contrastText,
+                  backgroundColor: 'rgb(13, 71, 161, 0.5)',
+                  color: '#90caf9',
                 }}
               >
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -120,7 +121,7 @@ export default function Demos() {
                       {card.title}
                     </Typography>
                     <Typography variant="subtitle1" component="div">
-                      {card.artist}
+                      {card.category}
                     </Typography>
                   </CardContent>
                   <Box
@@ -141,6 +142,12 @@ export default function Demos() {
                         <PlayArrowIcon sx={{ height: 38, width: 38 }} />
                       )}
                     </IconButton>
+                    {currentCardIndex == index && (
+                      <audio
+                        src={card.audioUrl}
+                        autoPlay={playing}
+                        onEnded={() =>setPlaying(false)} />
+                    )}
                   </Box>
                 </Box>
               </Card>

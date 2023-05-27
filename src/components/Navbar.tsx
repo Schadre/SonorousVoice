@@ -1,17 +1,20 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-// Label Icons for non Tech saavy
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
   return (
     <nav
-      className="navbar bg-blue-900"
       style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        backgroundColor: 'rgb(13, 71, 161, 0.5)',
+        backgroundColor: 'rgb(0, 0 0, 0.5)',
         color: 'rgb(144, 202, 249, 0.5)',
         padding: '1rem',
         position: 'fixed',
@@ -21,22 +24,21 @@ function Navbar() {
         height: '100vh',
         transition: 'width 0.3s ease',
         zIndex: 100,
-        boxShadow: '4px 7px 10px rgba(0, 0, 0, 0.4)',
       }}
     >
       <div className="flex flex-col items-center space-y-20">
-        <Link to="/">
+        <Link to="/" onClick={() => setActiveLink("/")} style={{ color: activeLink === "/" ? 'whitesmoke' : 'rgb(144, 202, 249, 0.5)' }}>
           <i className="fa-solid fa-house fa-xl hover:text-blue-50" title='Home'></i>
-        </Link>
-        <Link to="/demos">
+        </Link>Home
+        <Link to="/demos" onClick={() => setActiveLink("/demos")} style={{ color: activeLink === "/demos" ? 'whitesmoke' : 'rgb(144, 202, 249, 0.5)' }}>
           <i className="fa-solid fa-play fa-xl hover:text-blue-50" title='Demos'></i>
-        </Link>
-        <Link to="/about">
+        </Link>Demos
+        <Link to="/about" onClick={() => setActiveLink("/about")} style={{ color: activeLink === "/about" ? 'whitesmoke' : 'rgb(144, 202, 249, 0.5)' }}>
           <i className="fa-solid fa-address-card fa-xl hover:text-blue-50" title='About'></i>
-        </Link>
-        <Link to="/contact">
+        </Link>About
+        <Link to="/contact" onClick={() => setActiveLink("/contact")} style={{ color: activeLink === "/contact" ? 'whitesmoke' : 'rgb(144, 202, 249, 0.5)' }}>
           <i className="fa-solid fa-envelope fa-xl hover:text-blue-50" title='Contact Us'></i>
-        </Link>
+        </Link>Contact
       </div>
     </nav>
   );
