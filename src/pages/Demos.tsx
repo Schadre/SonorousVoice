@@ -52,7 +52,7 @@ export default function Demos() {
   const [playing, setPlaying] = React.useState(false);
   const [currentCardIndex, setCurrentCardIndex] = React.useState(null);
 
-  const handlePlayStop = (index) => {
+  const handlePlayStop = (index: any) => {
     if (currentCardIndex === index) {
       setPlaying(false);
       setCurrentCardIndex(null);
