@@ -77,7 +77,7 @@ function About() {
               <img
                 src={Family}
                 alt='a picture of a family'
-                style={{ maxWidth: '100%', maxHeight: '100%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
+                style={{ maxWidth: '100%', maxHeight: '50%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
               />
             </div>
           </div>
