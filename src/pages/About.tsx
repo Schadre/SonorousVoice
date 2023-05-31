@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Background from '../assets/images/About.jpeg';
 import Navbar from '../components/Navbar';
 import Family from '../assets/images/Family.jpeg';
-import Dad from '../assets/images/Studio.jpeg';
+
 
 function About() {
   return (
@@ -71,13 +71,6 @@ function About() {
                 src={Family}
                 alt='a picture of a family'
                 style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
-              />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '5px'}}>
-              <img
-                src={Dad}
-                alt='A man in the studio'
-                style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)'}}
               />
             </div>
           </div>
