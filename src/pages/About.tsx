@@ -20,13 +20,13 @@ function About() {
         style={{
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backdropFilter: 'blur(5px)',
-          minHeight: '90vh',
+          minHeight: '100vh',
           minWidth: '50vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          textAlign: 'center',
+          textAlign: 'left',
           paddingLeft: '65px',
           paddingBottom: '20px'
         }}
@@ -47,13 +47,13 @@ function About() {
           }}
         >
           <p className='p-3'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl ut nunc dictum tempor eu at ante. Nullam vitae
-            eleifend mi. Integer ac risus nisl. Curabitur lobortis interdum risus, at lobortis diam ultrices non. Quisque
-            ultrices diam a lacinia malesuada. In hac habitasse platea dictumst. Donec accumsan risus et arcu fermentum
-            scelerisque. Nulla facilisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto asperiores 
-            facilis voluptates, vel delectus explicabo quas dolore doloremque vitae qui perferendis error corporis harum a 
-            corrupti voluptatem provident voluptatibus fuga nesciunt ad, quibusdam adipisci alias nobis? Nihil laborum, 
-            asperiores veniam nostrum sit quis commodi voluptatem impedit voluptates ab beatae.
+          Hi there, I'm Arthur Dent. Over the past 20+ years, I've built a career around my voice, starting as a Naval Officer and then transitioning into the Voiceover industry in 2017. My genuine and authentic style of communication, coupled with a deep and comforting voice, often highlighted with a slight southern accent, has helped me establish a unique connection with my listeners.
+
+          Over the years, I've had the pleasure of working with a wide range of customers, offering a variety of voiceover services. What I've consistently heard is that my ability to speak directly to the listener in a way that feels real and authentic is what truly sets me apart. I believe this connection is what makes my work resonate and I'm proud of the relationships I've built because of it.
+
+          But my work is just one aspect of my life. I'm also a dedicated family man who treasures the quality time I get to spend with my loved ones. Balancing my passion for my work with my love for my family is a vital part of who I am.
+
+          Whether behind the microphone or at home, I live my life with authenticity and a genuine passion for what I do. Thanks for stopping by to learn a bit about me!
           </p>
           <div
             style={{
@@ -64,17 +64,6 @@ function About() {
               height: '80%',
             }}
           >
-            <img
-              src={Family}
-              alt='Photo'
-              style={{
-                maxWidth: '100%',
-                maxHeight: '100%',
-                objectFit: 'contain',
-                padding: '5px',
-                paddingBottom: '20px'
-              }}
-            />
           </div>
         </div>
       </div>
