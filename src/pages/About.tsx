@@ -21,7 +21,7 @@ function About() {
         style={{
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backdropFilter: 'blur(5px)',
-          minHeight: '100vh',
+          minHeight: '110vh',
           minWidth: '60vh',
           display: 'flex',
           flexDirection: 'column',
@@ -29,7 +29,7 @@ function About() {
           alignItems: 'center',
           textAlign: 'left',
           paddingLeft: '65px',
-          paddingBottom: '30px'
+          paddingBottom: '40px'
         }}
         className='flex flex-col justify-center items-center'>
         <h1 className='text-center text-5xl text-blue-200 font-bold p-10'>
@@ -63,17 +63,17 @@ function About() {
               gap: '5px',
               maxWidth: '90%',
               maxHeight: '80%',
-              marginTop: '20px',
+              marginTop: '10px',
             }}
           >
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '10px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '5px'}}>
               <img
                 src={Family}
                 alt='a picture of a family'
                 style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
               />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '10px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '5px'}}>
               <img
                 src={Dad}
                 alt='A man in the studio'
