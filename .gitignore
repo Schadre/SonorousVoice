@@ -1,4 +1,6 @@
 *.ContactForm.tsx
+contactform.tsx
+
 
 # Logs
 logs
