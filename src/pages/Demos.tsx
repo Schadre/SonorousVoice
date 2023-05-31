@@ -10,41 +10,32 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StopIcon from '@mui/icons-material/Stop';
 import Background from '../assets/images/Demos.jpeg';
 import Navbar from '../components/Navbar';
-import Kang from '../assets/VoiceOvers/Kang.mp3'
-import Gene from '../assets/VoiceOvers/Gene.mp3'
-import Nutella from '../assets/VoiceOvers/Nutella.mp3'
+import Kang from '../assets/VoiceOvers/Kang.mp3';
+import Phoenix from '../assets/VoiceOvers/UniversityofPhoenix.mp3';
+import Life from '../assets/VoiceOvers/LifeUnderground.mp3';
+import EJ from '../assets/VoiceOvers/EdwardJones.mp3';
 
 const cardData = [
   {
-    title: 'Kang',
+    title: 'Demo #1',
     category: 'Animation',
     audioUrl: Kang,
   },
   {
-    title: 'Gene',
+    title: 'Demo #2',
     category: 'Commerical',
-    audioUrl: Gene,
+    audioUrl: Phoenix,
   },
   {
-    title: 'Nutella',
-    category: 'Commerical',
-    audioUrl: Nutella,
+    title: 'Demo #3',
+    category: 'Documentary',
+    audioUrl: Life,
   },
   {
-    title: 'NBA',
-    category: 'Announcing',
-    audioUrl: Kang,
-  },
-  {
-    title: 'The Land',
-    category: 'Narration',
-    audioUrl: Gene,
-  },
-  {
-    title: 'Tribe',
-    category: 'Audio Books',
-    audioUrl: Gene,
-  },
+    title: 'Demo #4',
+    category: 'Commercial',
+    audioUrl: EJ,
+  }
 ];
 
 export default function Demos() {

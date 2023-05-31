@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Background from '../assets/images/About.jpeg';
 import Navbar from '../components/Navbar';
-import Family from '../assets/images/Family.jpeg'
+import Family from '../assets/images/Family.jpeg';
+import Dad from '../assets/images/Studio.jpeg';
 
 function About() {
   return (
@@ -32,7 +33,8 @@ function About() {
         }}
         className='flex flex-col justify-center items-center'>
         <h1 className='text-center text-5xl text-blue-200 font-bold p-10'>
-          About Me</h1>
+          About Me
+        </h1>
         <div
           style={{
             maxWidth: '85%',
@@ -47,23 +49,37 @@ function About() {
           }}
         >
           <p className='p-3'>
-          Hi there, I'm Arthur Dent. Over the past 20+ years, I've built a career around my voice, starting as a Naval Officer and then transitioning into the Voiceover industry in 2017. My genuine and authentic style of communication, coupled with a deep and comforting voice, often highlighted with a slight southern accent, has helped me establish a unique connection with my listeners.
+            Hi there, I'm Arthur Dent. Over the past 20+ years, I've built a career around my voice, starting as a Naval Officer and then transitioning into the Voiceover industry in 2017. My genuine and authentic style of communication, coupled with a deep and comforting voice, often highlighted with a slight southern accent, has helped me establish a unique connection with my listeners.
 
-          Over the years, I've had the pleasure of working with a wide range of customers, offering a variety of voiceover services. What I've consistently heard is that my ability to speak directly to the listener in a way that feels real and authentic is what truly sets me apart. I believe this connection is what makes my work resonate and I'm proud of the relationships I've built because of it.
+            Over the years, I've had the pleasure of working with a wide range of customers, offering a variety of voiceover services. What I've consistently heard is that my ability to speak directly to the listener in a way that feels real and authentic is what truly sets me apart. I believe this connection is what makes my work resonate and I'm proud of the relationships I've built because of it.
 
-          But my work is just one aspect of my life. I'm also a dedicated family man who treasures the quality time I get to spend with my loved ones. Balancing my passion for my work with my love for my family is a vital part of who I am.
+            But my work is just one aspect of my life. I'm also a dedicated family man who treasures the quality time I get to spend with my loved ones. Balancing my passion for my work with my love for my family is a vital part of who I am.
 
-          Whether behind the microphone or at home, I live my life with authenticity and a genuine passion for what I do. Thanks for stopping by to learn a bit about me!
+            Whether behind the microphone or at home, I live my life with authenticity and a genuine passion for what I do. Thanks for stopping by to learn a bit about me!
           </p>
           <div
             style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              width: '80%',
-              height: '80%',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '10px',
+              width: '100%',
+              marginTop: '20px',
             }}
           >
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <img
+                src={Family}
+                alt='a picture of a family'
+                style={{ maxWidth: '70%', maxHeight: '70%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
+              />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <img
+                src={Dad}
+                alt='A man in the studio'
+                style={{ maxWidth: '90%', maxHeight: '70%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)'}}
+              />
+            </div>
           </div>
         </div>
       </div>
