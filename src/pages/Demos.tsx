@@ -14,7 +14,6 @@ import Kang from '../assets/VoiceOvers/Kang.mp3';
 import Phoenix from '../assets/VoiceOvers/UniversityofPhoenix.mp3';
 import Life from '../assets/VoiceOvers/LifeUnderground.mp3';
 import EJ from '../assets/VoiceOvers/EdwardJones.mp3';
-import some from '../components/ContactForm'
 
 const cardData = [
   {
