@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Background from '../assets/images/About.jpeg';
 import Navbar from '../components/Navbar';
 import Family from '../assets/images/Family.jpeg';
+import { Padding } from '@mui/icons-material';
 
 
 function About() {
@@ -21,15 +22,15 @@ function About() {
         style={{
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backdropFilter: 'blur(5px)',
-          minHeight: '110vh',
+          minHeight: '100vh',
           minWidth: '60vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'left',
-          paddingLeft: '65px',
-          paddingBottom: '40px'
+          paddingLeft: '70px',
+          paddingBottom: '50px'
         }}
         className='flex flex-col justify-center items-center'>
         <h1 className='text-center text-5xl text-blue-200 font-bold p-10'>
@@ -40,7 +41,7 @@ function About() {
             maxWidth: '85%',
             maxHeight: '80%',
             backgroundColor: 'rgb(13, 71, 161, 0.5)',
-            padding: '10px',
+            padding: '30px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -57,33 +58,14 @@ function About() {
 
             Whether behind the microphone or at home, I live my life with authenticity and a genuine passion for what I do. Thanks for stopping by to learn a bit about me!
           </p>
-          <div
-            style={{
-              display: 'grid',
-              gap: '5px',
-              maxWidth: '90%',
-              maxHeight: '80%',
-              marginTop: '10px',
-            }}
-          >
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                padding: '5px',
-                width: '100%',
-              }}
-            >
-              <img
+          <img
                 src={Family}
                 alt='a picture of a family'
-                style={{ maxWidth: '100%', maxHeight: '50%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
+                style={{ maxWidth: '80%', maxHeight: '50%', padding: '20px'}}
               />
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }
 
