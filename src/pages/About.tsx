@@ -60,24 +60,24 @@ function About() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
               gap: '10px',
-              width: '100%',
+              maxWidth: '90%',
+              maxHeight: '80%',
               marginTop: '20px',
             }}
           >
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '20px'}}>
               <img
                 src={Family}
                 alt='a picture of a family'
-                style={{ maxWidth: '70%', maxHeight: '70%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
+                style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
               />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '20px'}}>
               <img
                 src={Dad}
                 alt='A man in the studio'
-                style={{ maxWidth: '90%', maxHeight: '70%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)'}}
+                style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)'}}
               />
             </div>
           </div>
