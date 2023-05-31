@@ -22,14 +22,14 @@ function About() {
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backdropFilter: 'blur(5px)',
           minHeight: '100vh',
-          minWidth: '50vh',
+          minWidth: '60vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'left',
           paddingLeft: '65px',
-          paddingBottom: '20px'
+          paddingBottom: '30px'
         }}
         className='flex flex-col justify-center items-center'>
         <h1 className='text-center text-5xl text-blue-200 font-bold p-10'>
@@ -60,20 +60,20 @@ function About() {
           <div
             style={{
               display: 'grid',
-              gap: '10px',
+              gap: '5px',
               maxWidth: '90%',
               maxHeight: '80%',
               marginTop: '20px',
             }}
           >
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '20px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '10px'}}>
               <img
                 src={Family}
                 alt='a picture of a family'
                 style={{ maxWidth: '80%', maxHeight: '80%', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}
               />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '20px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '10px'}}>
               <img
                 src={Dad}
                 alt='A man in the studio'
