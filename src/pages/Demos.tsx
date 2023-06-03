@@ -14,6 +14,7 @@ import Kang from '../assets/VoiceOvers/Kang.mp3';
 import Phoenix from '../assets/VoiceOvers/UniversityofPhoenix.mp3';
 import Life from '../assets/VoiceOvers/LifeUnderground.mp3';
 import EJ from '../assets/VoiceOvers/EdwardJones.mp3';
+import Modelo from '../assets/VoiceOvers/Modelo.mp3'
 
 const cardData = [
   {
@@ -35,6 +36,11 @@ const cardData = [
     title: 'Demo #4',
     category: 'Commercial',
     audioUrl: EJ,
+  },
+  {
+    title: 'Demo #5',
+    category: 'Commercial',
+    audioUrl: Modelo,
   }
 ];
 
