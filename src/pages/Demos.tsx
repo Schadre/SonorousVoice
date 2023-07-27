@@ -10,37 +10,19 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StopIcon from '@mui/icons-material/Stop';
 import Background from '../assets/images/Demos.jpeg';
 import Navbar from '../components/Navbar';
-import Kang from '../assets/VoiceOvers/Kang.mp3';
-import Phoenix from '../assets/VoiceOvers/UniversityofPhoenix.mp3';
-import Life from '../assets/VoiceOvers/LifeUnderground.mp3';
-import EJ from '../assets/VoiceOvers/EdwardJones.mp3';
-import Modelo from '../assets/VoiceOvers/Modelo.mp3'
+import ArthurDentN1 from '../assets/VoiceOvers/ArthurDentN1.mp3';
+import ArthurDentC2 from '../assets/VoiceOvers/ArthurDentC2.mp3';
 
 const cardData = [
   {
-    title: 'Demo #1',
-    category: 'Animation',
-    audioUrl: Kang,
+    title: 'Demo Reel',
+    category: 'Professional',
+    audioUrl: ArthurDentN1,
   },
   {
-    title: 'Demo #2',
+    title: 'Demo Reel',
     category: 'Commerical',
-    audioUrl: Phoenix,
-  },
-  {
-    title: 'Demo #3',
-    category: 'Documentary',
-    audioUrl: Life,
-  },
-  {
-    title: 'Demo #4',
-    category: 'Commercial',
-    audioUrl: EJ,
-  },
-  {
-    title: 'Demo #5',
-    category: 'Commercial',
-    audioUrl: Modelo,
+    audioUrl: ArthurDentC2,
   }
 ];
 
